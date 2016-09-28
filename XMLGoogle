@@ -1,0 +1,42 @@
+Explicando o arquivo previsão.xml
+< forecast information>- armazena as informações da localidade para a qual foi solicitada a previsão do tempo
+    < city data=""/>
+    - nome da cidade e o estado
+    < postal_code data=""/>
+    - uma estrutura de exibição como "cidade, estado, país"
+    < forecast_date data=""/>
+    - data da solicitação da previsão do tempo (data em que foi gerado o arquivo XML)
+    < current_date_time data=""/>
+    - data e hora corrente
+    < current_conditions>- armazena as informações da previsão do tempo para a data atual
+        < condition data=""/>
+        - condição do tempo (nublado, possibilidade de chuva, etc)
+        < temp_f data=""/>
+        - temperatura em graus Farenheit
+        < temp_c data=""/>
+        - temperatura em graus Celsius
+        < humidity data=""/>
+        - Umidade do ar
+        < icon data=""/>
+        - imagem que representa a condição do tempo
+        < wind_condition data=""/>
+        - velocidade do vento
+        < forecast_conditions>- armazena as informações da previsão do tempo para os próximos 4 dias
+            < day_of_week data=""/>
+            - dia da semana
+            < low data=""/>
+            - temperatura mínima
+            < high data=""/>
+            - temperatura máxima
+            < icon data=""/>
+            - imagem que representa a condição do tempo
+            < condition data=""/>
+            - condição do tempo (nublado, possibilidade de chuva, etc) Após entender o XML, vamos ver o arquivo
+            previsao.class.php, responsável pelos métodos que irão armazenar os parâmetros para a solicitação da
+            previsão do tempo e a geração do XML com a previsão do tempo.
+
+            Post completo em:
+            https://www.oficinadanet.com.br/artigo/php/previsao_do_tempo_com_a_api_do_google_weather
+            O conteúdo do Oficina da Net é protegido sob a licença Creative Commons (CC BY-NC-ND). Você pode
+            reproduzi-lo, desde que insira créditos COM O LINK para o CONTEÚDO ORIGINAL e não faça uso comercial de
+            nossa produção.

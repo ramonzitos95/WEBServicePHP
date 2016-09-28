@@ -3,7 +3,7 @@ include ('./PrevTempo.php');
 
 $objPrevTempo = new PrevTempo();
 //Passando para os parametros os dados.
-$parametros = $objPrevTempo->Parametros('Vitoria', 'Espirito Santo', 'Brazil', 'pt-br');
+$parametros = $objPrevTempo->Parametros('Rio de Janeiro', 'Rio de Janeiro', 'Brazil', 'pt-br');
 //Buscando no google a previsão do tempo
 $objPrevTempo->GeneratePrevTempo($parametros);
 ?>

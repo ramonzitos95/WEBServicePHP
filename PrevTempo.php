@@ -15,11 +15,13 @@ class PrevTempo
         $parametros['pais'] = $pais;
         $parametros['idioma'] = $idioma;
         $parametros['urlapi'] = 'http://www.google.com.br/ig/api';
+        return $parametros;
     }
 
     //Aqui é passado por parametro retornados na funcao paramtros, para que seja feita a requisição ao google
     function GeneratePrevTempo($parametros){
         //Acessando diretamente na internet
+        var_dump($parametros);
         $url = $parametros['urlapi']."?weather='" . urlencode($parametros['cidade']) ."','" . urlencode($parametros['estado']) . "','" . urlencode($parametros['pais']) . "'&hl=" . $parametros['idioma'];
 
         //A $url alternativa é usada para que você possa acompanhar esse tutorial de forma offline
